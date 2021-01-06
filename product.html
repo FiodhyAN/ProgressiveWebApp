@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/product.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+        <nav class="light-blue accent-2">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">FiodhyAN</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- SIDENAV -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      
+    <!-- Carousel -->
+    <h1 class="center teks">Our Project</h1>               
+    <div class="carousel">
+        <div class="carousel-item">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="img/project/valorant.jpg">
+                </div>
+                <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Valorant<i class="material-icons right">more_vert</i></span>
+                <p><button data-target="modalValorant" class="btn modal-trigger">More</button></p>
+                </div>
+                <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="img/project/dota.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Dota 2<i class="material-icons right">more_vert</i></span>
+                    <p><button data-target="modalDota" class="btn modal-trigger">More</button></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="img/project/Tokopedia.webp">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tokopedia<i class="material-icons right">more_vert</i></span>
+                    <p><button data-target="modalTokopedia" class="btn modal-trigger">More</button></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="img/project/cyberpunk.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Cyberpunk 2077<i class="material-icons right">more_vert</i></span>
+                    <p><button data-target="modalCyberpunk" class="btn modal-trigger">More</button></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="img/project/linkedin.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">LinkedIn<i class="material-icons right">more_vert</i></span>
+                    <p><button data-target="modalLinkedIn" class="btn modal-trigger">More</button></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    
+    <div id="modalValorant" class="modal">
+        <div class="modal-content">
+        <h4>Valorant Game Project</h4>
+        <img src="img/project/valorant.jpg" class="responsive-img" alt="valorant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+        Expedita?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <div id="modalDota" class="modal">
+        <div class="modal-content">
+        <h4>Dota 2 Game Project</h4>
+        <img src="img/project/dota.jpg" class="responsive-img" alt="valorant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+        Expedita?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <div id="modalTokopedia" class="modal">
+        <div class="modal-content">
+        <h4>Tokopedia Web Apps Project</h4>
+        <img src="img/project/Tokopedia.webp" class="responsive-img" alt="valorant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+        Expedita?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <div id="modalLinkedIn" class="modal">
+        <div class="modal-content">
+        <h4>LinkedIn Mobile Apps Project</h4>
+        <img src="img/project/linkedin.png" class="responsive-img" alt="valorant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+        Expedita?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <div id="modalCyberpunk" class="modal">
+        <div class="modal-content">
+        <h4>Cyberpunk 2077 Game Project</h4>
+        <img src="img/project/cyberpunk.jpg" class="responsive-img" alt="valorant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+        Expedita?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+            
+
+
+
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+            const sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+
+            const carousel = document.querySelectorAll('.carousel');
+            M.Carousel.init(carousel, {
+                shift: 50
+            });
+
+            const modal = document.querySelectorAll('.modal');
+            M.Modal.init(modal);
+      </script>
+</body>
+</html>
