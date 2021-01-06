@@ -32,7 +32,8 @@ const assets = [
     'img/slider/mobil.jpg',
     'img/slider/samurai.jpg',
     'manifest.json',
-    'https://fonts.googleapis.com/icon?family=Material+Icons'
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
+    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.08982696462!2d106.8081952!3d-6.2277647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe3d872dbc2b760a!2sGoogle%20Indonesia!5e0!3m2!1sen!2sid!4v1609893066782!5m2!1sen!2sid'
 ]
 
 self.addEventListener('install', evt => {
