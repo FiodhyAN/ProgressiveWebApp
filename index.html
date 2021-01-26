@@ -35,11 +35,19 @@
                 <li><a href="#portofolio">Portofolio</a></li>
                 <li><a href="product.html">Project</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a class='dropdown-trigger float-right' href='#' data-target='dropdown1'><i class="material-icons">account_circle</i></a></li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="login.html">Login</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="register.html">Sign Up</a></li>
+      </ul>
 
       <!-- SIDENAV -->
       <ul id="mobile-demo" class="sidenav">
@@ -296,6 +304,9 @@
         M.ScrollSpy.init(scroll, {
           scrollOffset: 50
         });
+
+        const dropDown = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropDown);
       </script>
     </body>
   </html>

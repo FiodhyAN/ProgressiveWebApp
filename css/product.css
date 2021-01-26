@@ -25,10 +25,15 @@ body
 .carousel
 {
     width: 100% !important;
-    perspective: 600px !important;
+	perspective: 600px !important;
 }
 
 .modal
 {
     margin-top: 50px;
+}
+
+footer
+{
+	padding: 20px 0;
 }
