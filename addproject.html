@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/add.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#43a047">
+    <title>Add New Project</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="red lighten-1">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">FiodhyAN</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Project</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- SIDENAV -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="product.html">Project</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+        <div class="row login">
+            <div class="col s8 l6 offset-l3 offset-s2">
+                <div class="card">
+                    <div class="card-action red lighten-1 white-text">
+                        <h3 class="center flow-text">Add New Project</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-field">
+                            <label for="name">Project Name</label>
+                            <input type="text" id="name">
+                        </div><br>
+                        <div class="form-field">
+                            <label for="image">Project Image</label>
+                            <div class="file-field input-field" id="image">
+                                <div class="btn red lighten-1">
+                                <span>File</span>
+                                <input type="file" multiple>
+                                </div>
+                                <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="input-field">
+                            <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Description</label>
+                        </div>
+                        <div class="form-field center-align">
+                            <button class="btn-large red lighten-1">Add New</button>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="red lighten-1 center">
+            <div class="footer-copyright">
+            <div class="container center">
+            © 2021 Copyright FiodhyAN
+            </div>
+            </div>
+        </footer>
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+    </script>
+</body>
+</html>

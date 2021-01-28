@@ -15,8 +15,12 @@
     <!-- Manifest -->
     <link rel="manifest" href="manifest.json">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#43a047">
     <title>Contact Us</title>
 </head>
 <body>
@@ -49,66 +53,52 @@
       </ul>
 
       <!-- CONTACT US -->
-      <section id="contact" class="contact scrollspy">
-        <div class="container">
-          <h3 class="center">Contact Us</h3>
-          <div class="row konten">
-            <div class="col m6 s12">
-              <div class="card-panel grey lighten-1 center">
-                <i class="material-icons ">
-                  email
-                </i>
-                <h5>Contact</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, dolorum.</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.08982696462!2d106.8081952!3d-6.2277647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe3d872dbc2b760a!2sGoogle%20Indonesia!5e0!3m2!1sen!2sid!4v1609893066782!5m2!1sen!2sid"
-               width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-
-            <div class="col m6 s12">
-              <form>
-                <div class="card-panel grey lighten-3">
-                  <h5>Please fill out this form</h5>
-                  <div class="input-field">
-                    <input type="text" name="name" id="name" required class="validate">
-                    <label for="name">Name</label>
-                  </div>
-
-                  <div class="input-field">
-                    <input type="email" name="email" id="email" class="validate">
-                    <label for="email">Email</label>
-                  </div>
-
-                  <div class="input-field">
-                    <input type="text" name="phone" id="phone"> 
-                    <label for="phone">Phone Number</label>
-                  </div>
-
-                  <div class="input-field">
-                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <button type="submit" class="btn grey lighten-1 black-text">Send</button>
-                </div>
-              </form>
-            </div>
+      <div class="wrapper">
+        <div class="contact-wrap">
+          <div class="contact-in">
+            <h1>Contact Info</h1>
+            <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+            <p>08123456</p>
+            <h2><i class="fa fa-envelope" aria-hidden="true"></i>Email</h2>
+            <p>Ardito917@gmail.com</p>
+            <h2><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h2>
+            <p>Cinere,Depok,Indonesia</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="contact-in">
+            <h1>Send a Message</h1>
+            <form>
+              <input type="text" placeholder="Full Name" class="contact-in-input">
+              <input type="text" placeholder="Email" class="contact-in-input">
+              <input type="text" placeholder="Subject" class="contact-in-input">
+              <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+              <input type="submit" value="SUBMIT" class="contact-in-btn">
+            </form>
+          </div>
+          <div class="contact-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31723.80588927789!2d106.77327327778902!3d-6.332358102678158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee5ce6f2839f%3A0x443ad7342a684558!2sCinere%2C%20Depok%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1611758797525!5m2!1sen!2sid" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Footer -->
+      <!-- Footer
       <footer class="grey lighten-1 center">
         <div class="footer-copyright">
           <div class="container center">
           © 2021 Copyright FiodhyAN
           </div>
         </div>
-      </footer>
+      </footer> -->
 
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
