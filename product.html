@@ -27,7 +27,7 @@
           <div class="container">
             <div class="nav-wrapper">
               <a href="index.html" class="brand-logo">FiodhyAN</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a href="#" data-target="side-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
@@ -41,7 +41,7 @@
       </div>
 
       <!-- SIDENAV -->
-      <ul class="sidenav" id="mobile-demo">
+      <ul class="sidenav side-menu" id="side-menu">
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portofolio">Portofolio</a></li>
@@ -133,106 +133,137 @@
                 </div>
             </div>
         </div>
+        <div class="row projects">
+            
+        </div>
         <div class="row">
             <div class="center">
-                <a class="btn-floating btn-large waves-effect waves-light light-blue accent-2 hoverable" href="addproject.html"><i class="material-icons">add</i></a>
+                <a class="btn-floating btn-large modal-trigger waves-effect waves-light light-blue accent-2 hoverable" data-target="modalForm">
+                    <i class="material-icons">add</i>
+                </a>
             </div>
         </div>
     </div>
     
 
     <!-- Modal -->
-    
-    <div id="modalValorant" class="modal">
-        <div class="modal-content">
-        <h4>Valorant Game Project</h4>
-        <img src="img/project/valorant.jpg" class="responsive-img" alt="valorant">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
-        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
-        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
-        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
-        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
-        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
-        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
-        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
-        Expedita?</p>
+        <div id="modalValorant" class="modal">
+            <div class="modal-content">
+            <h4>Valorant Game Project</h4>
+            <img src="img/project/valorant.jpg" class="responsive-img" alt="valorant">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+            Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+            iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+            dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+            amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+            facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+            omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+            repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+            Expedita?</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <div id="modalDota" class="modal">
+            <div class="modal-content">
+            <h4>Dota 2 Game Project</h4>
+            <img src="img/project/dota.jpg" class="responsive-img" alt="valorant">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+            Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+            iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+            dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+            amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+            facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+            omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+            repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+            Expedita?</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-    </div>
-    <div id="modalDota" class="modal">
-        <div class="modal-content">
-        <h4>Dota 2 Game Project</h4>
-        <img src="img/project/dota.jpg" class="responsive-img" alt="valorant">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
-        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
-        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
-        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
-        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
-        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
-        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
-        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
-        Expedita?</p>
+        <div id="modalTokopedia" class="modal">
+            <div class="modal-content">
+            <h4>Tokopedia Web Apps Project</h4>
+            <img src="img/project/Tokopedia.webp" class="responsive-img" alt="valorant">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+            Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+            iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+            dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+            amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+            facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+            omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+            repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+            Expedita?</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <div id="modalLinkedIn" class="modal">
+            <div class="modal-content">
+            <h4>LinkedIn Mobile Apps Project</h4>
+            <img src="img/project/linkedin.png" class="responsive-img" alt="valorant">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+            Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+            iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+            dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+            amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+            facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+            omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+            repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+            Expedita?</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-    </div>
-    <div id="modalTokopedia" class="modal">
-        <div class="modal-content">
-        <h4>Tokopedia Web Apps Project</h4>
-        <img src="img/project/Tokopedia.webp" class="responsive-img" alt="valorant">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
-        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
-        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
-        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
-        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
-        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
-        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
-        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
-        Expedita?</p>
+        <div id="modalCyberpunk" class="modal">
+            <div class="modal-content">
+            <h4>Cyberpunk 2077 Game Project</h4>
+            <img src="img/project/cyberpunk.jpg" class="responsive-img" alt="valorant">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
+            Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
+            iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
+            dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
+            amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
+            facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
+            omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
+            repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
+            Expedita?</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+
+        <div id="modalForm" class="modal">
+            <div class="modal-content">
+                <form id="post-form">
+                    <h4>Add New Project</h4>
+                    <div class="divider"></div>
+                    <div class="input-field">
+                        <input placeholder="Enter Project Name" id="name" type="text" class="validate">
+                        <label for="name">Project Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Enter Project Image URL" id="image" type="text" class="validate">
+                        <label for="image">Project Image</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea placeholder="Enter project Description" id="description" class="validate"></textarea>
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn-small">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
-    </div>
-    <div id="modalLinkedIn" class="modal">
-        <div class="modal-content">
-        <h4>LinkedIn Mobile Apps Project</h4>
-        <img src="img/project/linkedin.png" class="responsive-img" alt="valorant">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
-        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
-        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
-        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
-        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
-        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
-        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
-        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
-        Expedita?</p>
-        </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-    </div>
-    <div id="modalCyberpunk" class="modal">
-        <div class="modal-content">
-        <h4>Cyberpunk 2077 Game Project</h4>
-        <img src="img/project/cyberpunk.jpg" class="responsive-img" alt="valorant">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam harum quas illo cum. 
-        Corporis ipsa quam ipsum eligendi maxime vero quaerat atque et officiis quo perferendis 
-        iure cupiditate quisquam suscipit ducimus explicabo, expedita culpa, veniam debitis sit 
-        dolore libero? Fugiat provident eaque, repellendus odit corporis ea porro illo suscipit 
-        amet aliquid nostrum hic ut nemo tenetur similique culpa dolores. Commodi veniam est odit 
-        facilis modi alias cum, deleniti ratione iure magni, aperiam consequatur autem odio quia, 
-        omnis earum vel tempore? Sint cupiditate accusantium obcaecati doloremque ipsa, 
-        repellendus dolores ut. Blanditiis fuga, harum reiciendis et beatae asperiores id dolorum. 
-        Expedita?</p>
-        </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-    </div>
 
     <footer class="light-blue accent-2 center white-text">
         <div class="footer-copyright">
@@ -244,20 +275,31 @@
             
 
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase.js"></script>
 
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="js/app.js"></script>
-      <script>
-            const sideNav = document.querySelectorAll('.sidenav');
-            M.Sidenav.init(sideNav);
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
 
-            const carousel = document.querySelectorAll('.carousel');
-            M.Carousel.init(carousel, {
-                shift: 50
-            });
-
-            const modal = document.querySelectorAll('.modal');
-            M.Modal.init(modal);
-      </script>
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDL4SOx2ouN3Kphr_jBTB0UMAi2OXxWa2E",
+        authDomain: "finalproject-pwa-rpl.firebaseapp.com",
+        projectId: "finalproject-pwa-rpl",
+        storageBucket: "finalproject-pwa-rpl.appspot.com",
+        messagingSenderId: "1018589569031",
+        appId: "1:1018589569031:web:f472343338b63ae25f0aa2",
+        measurementId: "G-KXHDDXJ0TW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 </html>
