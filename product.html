@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="row projects">
+        <div class="row" id="projects">
             
         </div>
         <div class="row">
@@ -247,21 +247,26 @@
                         <input placeholder="Enter Project Name" id="name" type="text" class="validate">
                         <label for="name">Project Name</label>
                     </div>
-                    <div class="input-field">
-                        <input placeholder="Enter Project Image URL" id="image" type="text" class="validate">
-                        <label for="image">Project Image</label>
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>image</span>
+                            <input type="file" id="image" accept="images/*">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" id="image" type="text">
+                        </div>
                     </div>
                     <div class="input-field">
-                        <textarea placeholder="Enter project Description" id="description" class="validate"></textarea>
+                        <textarea id="description" class="materialize-textarea"></textarea>
                         <label for="description">Description</label>
                     </div>
                     <div class="input-field center">
-                        <button class="btn-small">Add</button>
+                        <button type="button" onclick="upload()" class="btn-small">Add</button>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
 

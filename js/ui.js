@@ -35,29 +35,29 @@ document.addEventListener('DOMContentLoaded', function(){
     M.Modal.init(modal);
 });
 
-const renderProject = (data,id) => {
-    const html = `
-        <div class="col m4 s6 project" data-id="${id}">
-            <div class="card">
-                <div class="card-image">
-                    <img src="${data.image}">
-                </div>
-                <div class="card-content">
-                    <span class="card-title">${data.name}</span>
-                    <p class="flex flex-wrap">${data.description}</p>
-                </div>
-                <div class="card-action">
-                    <i class="material-icons" data-id="${id}">delete_outline</i>
-                </div>
-            </div>
-        </div>
-    `;
+// const renderProject = (data,id) => {
+//     const html = `
+        // <div class="col m4 s6 project" data-id="${id}">
+        //     <div class="card">
+        //         <div class="card-image">
+        //             <img src="${data.image}">
+        //         </div>
+        //         <div class="card-content">
+        //             <span class="card-title">${data.name}</span>
+        //             <p class="flex flex-wrap">${data.description}</p>
+        //         </div>
+        //         <div class="card-action">
+        //             <i class="material-icons" data-id="${id}">delete_outline</i>
+        //         </div>
+        //     </div>
+        // </div>
+//     `;
     
-    projects.innerHTML += html;
-};
+//     projects.innerHTML += html;
+// };
 
-//remove project
-const removeProject = (id) => {
-    const project = document.querySelector(`.project[data-id=${id}]`);
-    project.remove();
-};
+// //remove project
+// const removeProject = (id) => {
+//     const project = document.querySelector(`.project[data-id=${id}]`);
+//     project.remove();
+// };
