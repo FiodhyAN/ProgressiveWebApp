@@ -92,11 +92,12 @@ function getdata()
         console.log(data);
         // pass data to div
         // loop data
-        for(let[key,value] of Object.entries(data)){
+        for(let[key,value] of Object.entries(data))
+        {
             projects_div.innerHTML = "<div class='col m4 s6'>" +
                                         "<div class='card'>" +
                                             "<div class='card-image'>" +
-                                                "<img src='"+value.imageURL+"'></div>" +
+                                                "<img src='"+value.imageURL+"' style='height:200px;'></div>" +
                                             "<div class='card-content'>" +
                                                 "<span class='card-title'>"+value.name+"</span>" +
                                                 "<p class='flex flex-wrap'>"+value.description+"</p></div>" +

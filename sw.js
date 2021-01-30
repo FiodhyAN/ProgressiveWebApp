@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'site-dynamic-v6';
+const staticCacheName = 'site-static-v1';
+const dynamicCacheName = 'site-dynamic-v1';
 const assets = [
     '/',
     '/index.html',
@@ -10,12 +10,23 @@ const assets = [
     '/img/clients/gojek.png',
     '/img/clients/tokopedia.png',
     '/img/clients/traveloka.png',
+    '/img/clients/valorant.png',
+    'img/contact/form-background.jpg',
     '/img/portfolio/1.png',
     '/img/portfolio/2.png',
     '/img/portfolio/3.png',
     '/img/portfolio/4.png',
     '/img/portfolio/5.png',
     '/img/portfolio/6.png',
+    '/img/project/background.jpg',
+    '/img/project/background.png',
+    '/img/project/cyberpunk.jpg',
+    '/img/project/dota.jpg',
+    '/img/project/linkedin.png',
+    '/img/project/mobilelegend.jpg',
+    '/img/project/mobilelegend.png',
+    '/img/project/tokopedia.webp',
+    '/img/project/valorant.jpg',
     '/img/Sidenav/background.webp',
     '/img/Sidenav/orang.jpg',
     '/img/slider/deku.jpg',
