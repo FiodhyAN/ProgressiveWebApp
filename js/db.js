@@ -102,7 +102,7 @@ function getdata()
                                                 "<span class='card-title'>"+value.name+"</span>" +
                                                 "<p class='flex flex-wrap'>"+value.description+"</p></div>" +
                                             "<div class='card-action'>" +
-                                                "<a id='"+key+"' onclick='delete_project(this.id)'><i class='material-icons'>delete_outline</i></a>" +
+                                                "<button class='btn' id='"+key+"' onclick='delete_project(this.id)'><i class='material-icons'>delete_outline</i></button>" +
                                         "</div></div></div>" + projects_div.innerHTML;
                                 
         }

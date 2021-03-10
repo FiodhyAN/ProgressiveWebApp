@@ -1,10 +1,12 @@
-const staticCacheName = 'site-static-v1';
-const dynamicCacheName = 'site-dynamic-v1';
+const staticCacheName = 'site-static-v6';
+const dynamicCacheName = 'site-dynamic-v6';
 const assets = [
     '/',
     '/index.html',
     '/js/app.js',
     '/js/materialize.min.js',
+    '/js/db.js',
+    '/js/ui.js',
     '/css/materialize.min.css',
     '/css/style.css',
     '/img/clients/gojek.png',
@@ -35,6 +37,7 @@ const assets = [
     '/img/slider/samurai.jpg',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+    'https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
     '/fallback.html'
 ];
 
